@@ -16,6 +16,7 @@ function App() {
 
     setIsLoading(true);
     const imageURL = URL.createObjectURL(file); // temporary URL တစ်ခုေဆာက်မယ်
+    //Image() ဆိုတာက built-in JavaScript browser API တစ်ခုဖြစ်တယ်
     const img = new Image(); //image obj တစ်ခု createလုပ်မယ်
     img.crossOrigin = "Anonymous"; //image processingလုပ်ဖို့အတွက်ဒါကလိုတယ်
     img.src = imageURL;
